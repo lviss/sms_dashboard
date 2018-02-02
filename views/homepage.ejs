@@ -1,0 +1,18 @@
+<!-- Default home page -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
+<md-content>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2 flex md-truncate>SMS Dashboard</h2>
+    </div>
+  </md-toolbar>
+  <md-nav-bar
+      md-selected-nav-item="currentNavItem"
+      nav-bar-aria-label="navigation links">
+      <md-nav-item md-nav-href="#!/" name="inbox">Inbox</md-nav-item>
+      <md-nav-item md-nav-href="#!contacts" name="contacts">Contacts</md-nav-item>
+    </md-nav-bar>
+  <div class="md-padding clearfix">
+    <div ng-view></div>
+  </div>
+</md-content>

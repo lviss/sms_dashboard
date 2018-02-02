@@ -1,0 +1,11 @@
+<md-button>Send New Message</md-button>
+<md-list>
+  <md-list-item class="md-3-line" ng-repeat="conversation in conversations" ng-href="#!conversation/{{conversation.id}}">
+    <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />
+    <div class="md-list-item-text" layout="column">
+      <h3>{{ conversation.contact.displayName }}</h3>
+      <h4 ng-if="conversation.messages.length > 1">{{ conversation.messages[conversation.messages.length - 2].text }}</h4>
+      <p>{{ conversation.messages[conversation.messages.length - 1].text }}</p>
+    </div>
+  </md-list-item>
+</md-list>
