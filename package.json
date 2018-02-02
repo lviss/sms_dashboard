@@ -1,0 +1,23 @@
+{
+  "name": "sms_dashboard",
+  "version": "1.0.0",
+  "description": "Send bulk sms through twillio, and reply to individual responses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lviss/sms_dashboard.git"
+  },
+  "keywords": [
+    "twillio",
+    "sms"
+  ],
+  "author": "lviss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lviss/sms_dashboard/issues"
+  },
+  "homepage": "https://github.com/lviss/sms_dashboard#readme"
+}
