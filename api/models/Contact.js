@@ -14,8 +14,13 @@ module.exports = {
     },
 
     // e.g. "5555555555"
-    phone_number: {
+    phoneNumber: {
       type: 'string'
+    },
+
+    messages: {
+      collection: 'message',
+      via: 'contact'
     }
   }
 };

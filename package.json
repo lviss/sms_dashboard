@@ -4,7 +4,8 @@
   "description": "Send bulk sms through twillio, and reply to individual responses.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "node debug app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -34,13 +35,10 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "npm": "^6.0.1",
     "rc": "1.0.1",
     "sails": "~0.12.9",
     "sails-disk": "~0.10.9"
-  },
-  "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js"
   },
   "homepage": "https://github.com/lviss/sms_dashboard#readme"
 }

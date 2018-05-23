@@ -1,0 +1,23 @@
+<div layout="column" class="fill-parent-height contact-view">
+  <h1>
+    <span>
+      {{ contact.displayName }}
+      <md-tooltip md-direction="right">{{ contact.phoneNumber }}</md-tooltip>
+    </span>
+  </h1>
+  <md-list scroll-glue md-scroll-y class="message-list">
+    <md-list-item class="md-3-line md-long-text" ng-repeat="message in contact.messages">
+      <div class="md-list-item-text">
+        <span>{{ message.text }}</span>
+        <p>{{ message.createdAt | date }}</p>
+      </div>
+    </md-list-item>
+  </md-list>
+  <form layout="column" layout-gt-sm="row" ng-submit="sendMessage()" class="compose-message">
+  <md-input-container class="md-block" flex>
+    <label>Send Message</label>
+    <input ng-model="outgoingMessage" md-maxlength="150" rows="1" md-select-on-focus />
+  </md-input-container>
+  <div style="padding-top:10px;"><md-button ng-click="sendMessage()">Send</md-button></div>
+  </form>
+</div>

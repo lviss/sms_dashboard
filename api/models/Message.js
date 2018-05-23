@@ -17,8 +17,8 @@ module.exports = {
       type: 'string'
     },
 
-    conversation: {
-      model: 'conversation'
+    contact: {
+      model: 'contact'
     }
   }
 };

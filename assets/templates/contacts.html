@@ -1,6 +1,7 @@
 <md-list>
-  <md-list-item ng-repeat="contact in contacts" ng-click="goToPerson(person.name, $event)" class="noright">
-    <img alt="{{ person.name }}" ng-src="{{ person.img }}" class="md-avatar" />
+  <md-list-item ng-repeat="contact in contacts" ng-click="goToContact(contact.id, $event)" class="noright">
+    <md-icon class="md-avatar-icon">person</md-icon>
+    <!--<img alt="{{ contact.displayName }}" ng-src="{{ contact.img }}" class="md-avatar" />-->
     <p>{{ contact.displayName }}</p>
   </md-list-item>
 </md-list>
